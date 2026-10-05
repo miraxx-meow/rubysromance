@@ -9,6 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- MailerLite Universal -->
+  <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '2685129');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -26,7 +36,7 @@
   <section id="book" class="hero">
     <div class="hero-container">
       <div class="book-cover">
-        <img src="assets/images/cover.jpg" alt="Lily of the Valley Book Cover" />
+        <img src="./assets/images/cover.jpg" alt="Lily of the Valley Book Cover" />
       </div>
       <div class="book-details">
         <span class="badge">Releasing October 20</span>
@@ -49,20 +59,14 @@
     </div>
   </section>
 
-  <!-- Newsletter Signup -->
+  <!-- Newsletter Signup (MailerLite Embedded) -->
   <section id="newsletter" class="newsletter-section">
     <div class="container">
       <h2>Never Miss a Release</h2>
       <p>Subscribe for exclusive teasers, bonus scenes, and release updates.</p>
       
-      <form id="snapitForm" class="newsletter-form" action="https://api.snapitforms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="sf_6af0c57be4763bf0741c0dbfb0244138">
-        
-        <input type="text" name="first_name" id="first_name" placeholder="First Name" required />
-        <input type="email" name="email" id="email" placeholder="Enter your email address" required />
-        
-        <button type="submit" class="btn primary">Join Newsletter</button>
-      </form>
+      <!-- MailerLite Form Container -->
+      <div class="ml-embedded" data-form="uR2Tao"></div>
     </div>
   </section>
 
@@ -86,7 +90,7 @@
     </div>
   </section>
 
- <!-- Footer -->
+  <!-- Footer -->
   <footer>
     <p>
       &copy; 2026 Ruby. All rights reserved. | 
