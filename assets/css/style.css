@@ -221,3 +221,68 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid rgba(255,255,255,0.05);
 }
+
+/* ==========================================
+   MailerLite Custom Dark Theme Overrides
+   ========================================== */
+
+/* Change form text & labels to light gray/white */
+.ml-embedded,
+.ml-embedded .ml-form-embedWrapper,
+.ml-embedded p,
+.ml-embedded label,
+.ml-embedded span {
+  color: var(--text-main) !important;
+  font-family: var(--font-body) !important;
+}
+
+/* Style the text input fields (First Name & Email) */
+.ml-embedded input[type="text"],
+.ml-embedded input[type="email"] {
+  background-color: var(--bg-color) !important;
+  color: var(--text-main) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 6px !important;
+  padding: 0.8rem !important;
+  font-size: 0.95rem !important;
+}
+
+/* Input placeholder text styling */
+.ml-embedded input::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.8;
+}
+
+/* Focus state for input fields */
+.ml-embedded input:focus {
+  border-color: var(--accent-color) !important;
+  outline: none !important;
+}
+
+/* Style the Subscribe Submit Button to match site buttons */
+.ml-embedded button[type="submit"],
+.ml-embedded .ml-button-horizontal button {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  padding: 0.8rem 1.5rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.ml-embedded button[type="submit"]:hover,
+.ml-embedded .ml-button-horizontal button:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+/* Fix container alignment and padding */
+.ml-embedded .ml-form-embedBody,
+.ml-embedded .ml-form-embedContent {
+  background: transparent !important;
+  padding: 0 !important;
+  max-width: 500px !important;
+  margin: 0 auto !important;
+}
