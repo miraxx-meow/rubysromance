@@ -54,9 +54,13 @@
     <div class="container">
       <h2>Never Miss a Release</h2>
       <p>Subscribe for exclusive teasers, bonus scenes, and release updates.</p>
-      <!-- Replace action with your email provider form URL (ConvertKit/MailerLite) -->
-      <form class="newsletter-form" action="#" method="POST">
-        <input type="email" placeholder="Enter your email address" required />
+      
+      <form id="snapitForm" class="newsletter-form" action="https://api.snapitforms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="sf_6af0c57be4763bf0741c0dbfb0244138">
+        
+        <input type="text" name="first_name" id="first_name" placeholder="First Name" required />
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+        
         <button type="submit" class="btn primary">Join Newsletter</button>
       </form>
     </div>
@@ -66,7 +70,7 @@
   <section id="about" class="about-section">
     <div class="container about-grid">
       <div class="author-photo">
-        <img src="assets/images/author.jpg" alt="Ruby" />
+        <img src="./assets/images/author.jpg" alt="Ruby" />
       </div>
       <div class="author-bio">
         <h2>About Ruby</h2>
